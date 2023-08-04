@@ -43,8 +43,8 @@ header #open_nav {
     /* overflow-y: auto -> 웹브라우저 y축 기준으로 내용이 넘칠 경우 스크롤을 표시하고 넘치치 않다면 스크롤을 숨김 */
 }
 header #open_nav #nav_close{
-    position: absolute;
-    right: 90px; top:90px
+    position: absolute; width: 40px; height: 40px;
+    right: 90px; top:90px; z-index:999;
 }
 header #open_nav #nav_close img{width: 100%;}
 /* swiper-slide nav-adver */
