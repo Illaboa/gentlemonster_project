@@ -7,7 +7,6 @@
 ::-webkit-scrollbar-thumb:hover {background-color: #555;}
 /* header */
 header {
-    background:aqua;
     width:calc(100% - 60px); /*full*/
     height:100px;
     margin:0 auto;

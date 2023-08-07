@@ -1,0 +1,127 @@
+/* main */
+/* main - 1.visual */
+main {}
+main .visual {
+    position: relative; overflow: hidden; /* 설정한 높이에서 비디오가 넘치면 안되니 방지하고자 hideen 속성 부여 */
+    height: 100vh; /* 화면 높이 만큼의 높이로 값 주기 */
+}
+main .visual .txt {
+    position: absolute; text-align: center;
+    width: 100%; top:40%; z-index: 900;
+    color: #fff;
+}
+main .visual .txt p {
+    font-size: 2.369rem;
+    letter-spacing: -0.02em;
+    margin-bottom: 20px;
+}
+main .visual .txt h1 {
+    font-size: 3.6rem;
+    font-weight: 700em;
+    margin-bottom: 50px;
+}
+main .visual .txt .link {}
+main .visual .txt .link a {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff; padding: 15px 0;
+    font-size: 1.7rem;
+    font-weight: 400em;
+    padding: 15px 25px;
+    margin-top: 20px;
+}
+main .visual .txt .link a:hover{background: #E78B36;}
+main .visual .txt .link a:first-child {margin-right: 10px;}
+main .visual video {
+    width:100%;
+    /* 화면 크기 조정 시 비디오 중심축 맞추기 */
+    /* 필수조건: video의 부모가 vh 또는 px 높이 설정 되어야함 */
+    position: absolute; left: 50%; /* left로 중심축 설정 */
+    transform: translateX(-50%);
+    /* 방법3: 절대크기값 */
+    /* width: 1920px; */
+}
+/* 와이드 비율의 video 화면 전체 배치 시 여백 해결 법 */
+/* 1.반응형 웹 @meadia로 특정 해상도 마다 비디오의 크기 설정값 변경 */
+/* 2. 가장 큰 데스크 탑 기준 너비를 100%보다 크게 설정하고 넘치게 하는 방법 */
+/* 3. 상대크기가 아닌 절대크기값(px으로 크기를 설정해서 화면 해상도에 영향을 받지 않는 방법 */
+/* main 2. bnr */
+main .adver_bnr {
+    margin: 0 auto;
+    background-image: url(../header.jpg);
+    background-repeat: no-repeat;
+    height:300px; 
+}
+main .adver_bnr .txt {
+    /* content: width px */
+    max-width:1200px;
+    text-align: left;
+    padding: 79px 0 0 29px;
+}
+main .adver_bnr .txt p {
+    padding-bottom:10px;
+    font-size: 1.7rem;
+    margin-bottom: 18px;
+}
+main .adver_bnr .txt h1 {
+    font-size: 3.157rem;
+    font-weight: 700em;
+    margin-bottom: 18px;
+}
+main .adver_bnr .txt .link {
+    padding-top: 25px;
+    font-size: 1.3rem;
+}
+main .adver_bnr .txt .link a {
+    padding: 15px 25px;
+    background: black;
+    border-radius: 10px;
+    color: #fff; padding: 16px 34px;
+}
+/* 온라인 서비스 */
+main #online_service {
+    background: url(../images/service_bg.jpg) no-repeat;
+    background-position: right center;
+    background-size: 80%;
+    padding-top: 74px;
+    margin-top: 85px;
+}
+main #online_service .txt {
+    width: 890px;
+    background: #fff;
+    padding: 85px 210px 160px 155px;
+    display: inline-block;
+    position: relative;
+}
+main #online_service .txt h1 {
+    font-size: 2.369rem;
+    font-weight: 700em;
+    margin-bottom: 38px;
+}
+main #online_service .txt p {
+    line-height: 30px;
+    font-size: 1.1rem;
+}
+main #online_service .service_link {
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding:16px 34px;
+}
+/* 매장 서비스 */
+main #shop_service {
+background: url(../images/service_bg2.jpg) no-repeat;
+background-position:left center;
+background-size: 80%;
+padding-top: 74px;
+margin-top: 73px;
+display: flex; flex-flow: row-reverse;
+}
+main #shop_service .txt {
+    background: #fff;
+    width: 870px; text-align: right;
+    padding: 74px 155px 150px 234px;
+    
+}
+main #shop_service .txt h1 {}
+main #shop_service .txt p {}
+main #shop_service .store_link {}
