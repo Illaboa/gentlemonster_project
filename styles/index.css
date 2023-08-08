@@ -84,6 +84,7 @@ main #online_service {
     background-size: 80%;
     padding-top: 74px;
     margin-top: 85px;
+    position: relative;
 }
 main #online_service .txt {
     width: 890px;
@@ -105,23 +106,57 @@ main #online_service .service_link {
     background: #fff;
     border: 1px solid #000;
     border-radius: 10px;
-    padding:16px 34px;
+    padding:15px 35px;
+    position: absolute; left: 150px; bottom: 70px; 
 }
 /* 매장 서비스 */
 main #shop_service {
-background: url(../images/service_bg2.jpg) no-repeat;
-background-position:left center;
-background-size: 80%;
-padding-top: 74px;
-margin-top: 73px;
-display: flex; flex-flow: row-reverse;
+    background: url(../images/service_bg2.jpg) no-repeat;
+    background-position:right center; background-size: 80%;
+    padding-top: 74px; margin-bottom: 200px;
+    display: flex; flex-flow: row-reverse;
+    overflow: hidden;
 }
 main #shop_service .txt {
+    width: 890px;
     background: #fff;
-    width: 870px; text-align: right;
-    padding: 74px 155px 150px 234px;
+    padding: 85px 210px 160px 155px;
+    display: inline-block;
+    position: relative;
     
 }
-main #shop_service .txt h1 {}
-main #shop_service .txt p {}
-main #shop_service .store_link {}
+main #shop_service .txt h1 {
+    font-size: 2.369rem;
+    font-weight: 700em;
+    margin-bottom: 38px;
+}
+main #shop_service .txt p {
+    line-height: 30px;
+    font-size: 1.1rem;
+}
+main #shop_service .store_link {
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding:15px 35px;
+    position: absolute; left: 150px; bottom: 70px; 
+}
+/* main #login_top {}
+main #login_top h1 {}
+main #login_top .id{}
+main #login_top .id form {}
+main #login_top .id form #id{}
+main #login_top .pw {}
+main #login_top .pw form {}
+main #login_top .pw form #pw {}
+main #login_top .login_btm {}
+main #login_top .login_btm form {}
+main #login_top .login_btm form #save {}
+main #login_top .login_btm .find {}
+main #login_top .login_btm .find a {}
+main #btm_btn {}
+main #btm_btn a {}
+main #btm_btn .login {}
+main #btm_btn .nav_login {}
+main #btm_btn .kakao_login {}
+main #btm_btn .member {} */
