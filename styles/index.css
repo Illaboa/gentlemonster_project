@@ -80,7 +80,7 @@ main .adver_bnr .txt .link a {
 /* 온라인 서비스 */
 main #online_service {
     background: url(../images/service_bg.jpg) no-repeat;
-    background-position: right center;
+    background-position: left center;
     background-size: 80%;
     padding-top: 74px;
     margin-top: 85px;

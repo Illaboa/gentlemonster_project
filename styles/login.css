@@ -1,0 +1,79 @@
+main {}
+main .login {margin: 0 auto; width:800px;}
+main .login .top {}
+main .login .top h1 {
+    font-size: 3.15rem;
+    margin:80px 0;
+    font-weight: 500rem;
+}
+main .login .top .input {width: 800px;}
+main .login .top .input .id_info {}
+main .login .top .input .id_info #id_frm {}
+main .login .top .input .id_info #id_frm legend {margin-bottom: 20px;}
+main .login .top .input .id_info #id_frm #id {
+    width: 800px; height: 30px;
+    border-bottom: 1px solid #000;
+    margin-bottom: 40px;
+}
+main .login .top .input .pw_info {}
+main .login .top .input .pw_info #pw_frm{}
+main .login .top .input .pw_info #pw_frm legend {margin-bottom: 20px;}
+main .login .top .input .pw_info #pw_frm #pw{
+    width: 800px; height: 30px;
+    letter-spacing: 0.1rem;
+    border-bottom: 1px solid #000;
+}
+main .login .btm {
+    width: 800px;
+    display: flex;
+    flex-flow: row nowrap;
+    display: inline-block;
+}
+main .login .btm #save_frm {}
+main .login .btm #save_frm legend {
+    position: relative; left: 30px; top: 15px;
+}
+main .login .btm #save_#save_frm #id_save{
+    position: absolute; transform: scale(4);
+}
+main .login .btm .find {
+    display: flex; 
+    flex-flow: row nowrap; float: right;
+    transform: translateY(-15px)
+}
+main .login .btm .find a{}
+main .login .btm .find p{margin: 0 10px;}
+main .login_btn {
+    margin: 0 auto; width:800px;
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 100px;
+}
+main .login_btn #login {
+    background: #000; color: #fff;
+    width: 800px;
+    padding: 17px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+main .login_btn #nav_login {
+    background: #12EA34; color: #fff;
+    width: 800px;
+    padding: 17px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+main .login_btn #kakao_login {
+    background: #FFEA00; color: #2C1305;
+    width: 800px; 
+    padding: 17px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+main .login_btn #member {
+    background: #fff;
+    width: 800px;
+    border: 1px solid #000;
+    padding: 17px;
+    text-align: center;
+}
