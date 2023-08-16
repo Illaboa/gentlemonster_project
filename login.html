@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LOGIN | GENTELMONSET</title>
+    <!-- swiper slide -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href=" ./styles/common.css">
     <link rel="stylesheet" href="./styles/login.css">
 </head>
 <body>
     <!-- header -->
+    <?php include ("./header.php") ?>
     <main>
         <div class="login">
             <div class="top">
@@ -49,5 +53,8 @@
         </div>
     </main>
     <!-- footer -->
+    <?php include ('./footer.php') ?>
+    <!-- header, footer 웹페이지 공통영역 적용 JS -->
+    <script src="./script/common.js"></script>
 </body>
 </html>

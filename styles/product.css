@@ -1,0 +1,71 @@
+main {}
+/* 1. swiper-slide */
+main #product_slide {}
+main #product_slide .swiper-wrapper {}
+main #product_slide .swiper-wrapper .swiper-slide {
+    /* 공통 slide 1~6 */
+    width: 700px; height: 740px; position: relative;
+}
+main #product_slide .swiper-wrapper .swiper-slide .txt {
+    position: absolute; left: 30px; bottom: 50px; letter-spacing: -0.02rem;
+    /* 초기 숨기기(이후 swiper 활용 서서히 나타나고 사라지기 기능추가 */
+    opacity: 0; transform: translateX(50px); transition:all 2s;
+}
+main #product_slide .swiper-wrapper .swiper-slide .txt dt {font-size: 2.369rem; font-weight: 500; line-height: 50px;}
+main #product_slide .swiper-wrapper .swiper-slide .txt dt em {font-size: 2.369rem; font-weight: 600;}
+main #product_slide .swiper-wrapper .swiper-slide .txt dd {font-size: 1.777rem; margin-top: 30px;} 
+main #product_slide .swiper-wrapper .slide1 {background-image:url(../images/model/model_1.jpg);}
+main #product_slide .swiper-wrapper .slide2 {background-image:url(../images/model/model_2.jpg);} 
+main #product_slide .swiper-wrapper .slide3 {background-image:url(../images/model/model_3.jpg);}
+main #product_slide .swiper-wrapper .slide4 {background-image:url(../images/model/model_4.jpg);}
+main #product_slide .swiper-wrapper .slide5 {background-image:url(../images/model/model_5.jpg);}
+main #product_slide .swiper-wrapper .slide6 {background-image:url(../images/model/model_6.jpg);}
+/* swiper-scrollbar design */
+main #product_slide .swiper-scrollbar {/* 스크롤 배경(크기,위치O) */
+    /* 기본 내장 값으로 position:absolute 설정 되어있음 */
+    left:50%; bottom: 2%; transform: translateX(-50%); width: 50%; 
+}
+main #product_slide .swiper-scrollbar-drag {background: #000;}/* 스크롤 막대(크기X) */
+/* 2. 카테고리 */
+main #category {width:1350px; margin:0 auto; display:flex; justify-content: space-between; margin-top:100px}
+main #category a {width:170px;display:flex; flex-flow:column nowrap; align-items: center;}
+main #category a img {border-radius:50%; width:100%;}
+main #category a:hover img {filter:brightness(105%);}
+main #category a:hover span {color:#aaa;}
+main #category a span {margin-top:18px; font-size:1.25rem;}
+main #product_list {padding:100px 0 0;}
+main #product_list .title {width:calc(100% - 60px); margin:0 auto;}
+main #product_list .title .top {padding:30px 0; border-bottom:1px solid #222; 
+    display:flex; justify-content: space-between;}
+main #product_list .title .top h1 {font-weight:700; font-size:2.5rem;}
+main #product_list .title .top .filter {}
+main #product_list .title .top .filter a {margin-right:28px;}
+main #product_list .title .top .filter a:last-child {margin-right:0}
+main #product_list .title .btm {padding:34px 0 85px; display:flex; 
+    justify-content: space-between;}
+main #product_list .title .btm p {font-size:1.25rem;}
+main #product_list .title .btm p em {font-size:1.25rem; font-weight:700;}
+main #product_list .title .btm #product_align {font-size:1.25rem;}
+main #product_list .title .btm #product_align option {}
+main #product_list .container {width:calc(100% - 60px); margin:0 auto; display:flex; justify-content: space-between;}
+main #product_list .container .item {margin-bottom:50px;width:278px; display:flex; flex-flow:column nowrap;}
+main #product_list .container .item .box {position:relative; }
+main #product_list .container .item .box .item_img {}
+main #product_list .container .item .box .item_img img {width:100%;}
+main #product_list .container .item .box .like_img {position:absolute; right:20px; top:20px; z-index:800;}
+main #product_list .container .item .box .like_img img {width:24px;}
+main #product_list .container .item .txt {}
+main #product_list .container .item .txt > * {line-height:25px;}
+main #product_list .container .item .txt h2 {}
+main #product_list .container .item .txt .name {}
+main #product_list .container .item .txt .price {}
+main #product_list .container .item .txt .color {margin-top:20px;}
+main #product_list .container .item .txt .color span {
+    width:20px; height:20px; display:inline-block; border-radius:50%;
+}
+main #product_list .container .item .txt .color .black {background:#000;}
+main #product_list .container .item .txt .color .gray {background:#aaa;}
+main #product_list .container .item .txt .color .white {background:#fff; border: 1px solid #aaa;}
+main #product_list .container .item .txt .color .rose {background:coral;}
+main #product_list .container .item .txt .color .gold {background:gold;}
+main #product_list .container .item .txt .color .blue {background:blue;}

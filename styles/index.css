@@ -47,7 +47,7 @@ main .visual video {
 /* main 2. bnr */
 main .adver_bnr {
     margin: 0 auto;
-    background-image: url(../header.jpg);
+    background-image: url(../images/header.jpg);
     background-repeat: no-repeat;
     height:300px; 
 }
@@ -56,6 +56,7 @@ main .adver_bnr .txt {
     max-width:1200px;
     text-align: left;
     padding: 79px 0 0 29px;
+    font-family: 700;
 }
 main .adver_bnr .txt p {
     padding-bottom:10px;

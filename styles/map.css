@@ -1,0 +1,7 @@
+main {margin: 20px 0 40px 50px; display: inline-block;}
+main #map {
+    background: aqua;
+    width: 700px; margin: 50px auto; height: 500px;
+}
+main h1 {font-weight: 600rem;}
+main p {line-height: 30px;}
