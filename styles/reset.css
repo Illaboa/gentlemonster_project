@@ -1,21 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
-* {box-sizing:border-box;}
+*{box-sizing:border-box;}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap');
 html,body,
 h1,h2,h3,h4,h5,h6,p,blockquote,address,
 span,strong,em,q,sub,sup,del,s,a,img,
 div,header,nav,aside,main,footer,
 article,figure,figcaption,section,video,
 table,thead,tbody,tfoot,tr,th,td,ul,ol,li,dl,dt,dd,
-form,fieldset,legend,input,select,option,button,label,textarea {
+form,fieldset,legend,input,section,option,button,label,textarea {
+    margin:0; padding: 0; line-height:1.0;
+    font-size: 16px; font-style:normal; font-weight:normal;
+    text-decoration:none;
     font-family: 'Noto Sans KR', sans-serif;
-    margin:0; padding:0; line-height:1.0;
-    font-size:16px; font-style:normal; font-weight:normal;
 }
-th {text-align:left;}
+th{text-align: left;}
 table,tr,th,td {border-collapse:collapse;}
-ul,ol,li {list-style:none;}
-a {color:#000; text-decoration:none;}
-input {outline:none; border:0;}
+ul,ol,li {list-style:none;}/*목록 디자인 리셋(옆에 붙는● 같은 거)*/
+a {color: #000;}
+input {outline: none; border:0;}
 button {cursor:pointer; border:0;}
 fieldset {border:0;}
 .skip {display:none;}
